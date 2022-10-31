@@ -14,17 +14,6 @@
     font-family: 'Montserrat', sans-serif;
 }
 
-/* header start  */
-
-
-header{
-    background-image: url(images/bg1.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
-    height: 100vh;
-    width: 100%;
-}
 
 /* navbar start  */
 
@@ -56,7 +45,6 @@ header nav > a > img{
 
 .navmenu ul{
     display: flex;
-    transition: 0.5s;
 }
 
 .navmenu ul li a{
@@ -77,16 +65,6 @@ header nav > a > img{
 /* media for mobile  */
 
 @media only screen and (max-width:900px) {
-
-    header{
-        background-image: url(images/bg2.jpg);
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center center;
-        height: 100vh;
-        width: 100%;
-    }
-
     header nav{
         padding: 0 20px;
     }
@@ -102,7 +80,7 @@ header nav > a > img{
     }
     
     .navmenu ul{
-        flex-direction: column;
+        display: block;
         text-align: center;
         margin: 20% 0;
     }
@@ -133,5 +111,86 @@ header nav > a > img{
 
     #check:checked ~ .ckbtn i::before{
         content: '\f00d';
+    }
+}
+
+
+
+/* main part start  */
+
+main {
+    padding-top: 60px;
+}
+
+.owncontact{
+    padding-bottom: 80px;
+}
+
+.owncontact > h2{
+    text-align: center;
+    text-transform: uppercase;
+    color: gray;
+    padding: 30px 0;
+    font-size: 20px;
+    margin: 0 5%;
+}
+
+.container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    margin: 0 auto;
+    background-color: #1a7a7e;
+    border-radius: 30px;
+    padding: 20px;
+}
+
+.cprofile{
+    width: 50%;
+    overflow: hidden;
+    border-radius: 20px;
+    box-shadow: 3px 3px 15px #00000077;
+}
+
+.cprofile img{
+    width: 100%;
+}
+
+.contact{
+    width: 50%;
+    margin-left: 20px;
+    border-radius: 40px;
+    overflow: hidden;
+}
+
+.contact div{
+    text-align: center;
+    padding: 20%;
+    font-size: 20px;
+    color: #ddd;
+    background-color: #1abc9c;
+    text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.39);
+}
+
+
+@media only screen and (max-width:900px) {
+    .container{
+        flex-direction: column;
+    }
+
+    .cprofile{
+        width: 90%;
+    }
+
+    .contact{
+        width: 90%;
+        margin-left: 0;
+        margin-top: 20px;
+    }
+
+    .contact div{
+        font-size: 18px;
+        padding: 10%;
     }
 }
