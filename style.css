@@ -68,9 +68,9 @@ header nav > a > img{
 
 .navmenu ul li a:hover{
     color: #2c3e50;
-    background:#e67e22;
+    background:#2bc2c7;
     border-radius: 5px;
-    box-shadow: 0px 2px 10px #00000060;
+    box-shadow: 0px 2px 10px #00000040;
 }
 
 
