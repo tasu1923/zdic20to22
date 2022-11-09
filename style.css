@@ -37,6 +37,8 @@ header nav{
     padding: 0 60px;
     background-image: linear-gradient(to bottom,#1abc9c,#1a7a7e);
     position: fixed;
+    z-index: 1;
+    box-shadow: 0px 0px 10px #00000028;
 }
 
 header nav > a > img{
@@ -188,7 +190,7 @@ header nav > a > img{
 
 .hero-area > .text-container a{
     text-decoration: none;
-    color: #000;
+    color: rgb(24, 24, 24);
     background-image: linear-gradient(to top, #7e4a1a, #c77e2b );
     padding: 10px 30px;
     border-radius: 5px;
@@ -196,8 +198,94 @@ header nav > a > img{
     font-weight: bold;
 }
 
+.hero-area > .text-container a i{
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.4s;
+}
+
+.hero-area > .text-container a:hover i{
+    visibility: visible;
+    opacity: 1;
+    margin-left: 10px;
+}
+
 .hero-area > .text-container a:hover{
     background-image: linear-gradient(to top, #c77e2b, #7e4a1a );
+}
+
+
+/* principal part start  */
+
+.principal{
+    background-image: linear-gradient(170deg, #13b162, #1dd8c8, #1377b1 );
+}
+
+.principal > h2{
+    text-align: center;
+    font-size: 30px;
+    text-transform: uppercase;
+    padding: 40px 0;
+    color: #212864;
+    opacity: 0.8;
+}
+
+.principal .container{
+    width: 80%;
+    margin: 0 auto;
+    padding-bottom: 50px;
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+    color: #383838;
+}
+
+.principal .container > div{
+    width: 50%;
+}
+
+.principal .container .img{
+    display: flex;
+    justify-content: center;
+}
+
+.principal .container .img img{
+    transition: 0.3s;
+}
+
+.principal .container .img img:hover{
+    transform: scale(1.05);
+    box-shadow: 0px 0px 10px #0000003f;
+    border-radius: 15px;
+}
+
+.principal .container .info{
+    margin: 5% 0;
+}
+
+.principal .container .info .tag{
+    margin-bottom: 30px;
+}
+
+.principal .container a{
+    color: #2c2c2c;
+    font-weight: 500;
+    margin: 50px 0;
+    display: inline-block;
+    background-image: linear-gradient(160deg, #ffd700, #a08800);
+    padding: 10px 30px;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.principal .container a:hover{
+    background-image: linear-gradient(160deg, #a08800, #ffd700);
+    transform: scale(1.05);
+}
+
+.principal .container a i{
+    margin-left: 5px;
+    font-size: 15px;
 }
 
 
@@ -233,5 +321,26 @@ header nav > a > img{
     font-size: 12px;
     font-weight: bold;
 }
+
+
+
+/* principal part start  */
+
+.principal .container{
+    display: block;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.principal .container .img{
+    width: 100%;
+}
+
+.principal .container .info{
+    width: 100%;
+    text-align: center;
+    margin: 50px 0;
+}
+
 
 }
